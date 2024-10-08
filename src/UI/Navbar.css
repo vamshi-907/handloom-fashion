@@ -1,0 +1,115 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #f3d4d4;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #e0b4b4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #f0c0c0; /* Slightly darker hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.navbar .logo {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #4d3d3d;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    transition: color 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: #7a5c5c;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-links li {
+    position: relative; 
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #4d3d3d;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #7a5c5c;
+}
+
+/* Underline hover effect for nav-links */
+.navbar .nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-color: #4d3d3d;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Auth Buttons */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling for the anchor tag to look like a button */
+.navbar .auth-buttons a {
+    padding: 12px 30px;
+    border: 2px solid #4d3d3d;
+    background-color: transparent;
+    color: #4d3d3d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    text-align: center;
+    display: inline-block; /* Makes the anchor behave like a button */
+    font-size: 12px; /* Changed font-size to small */
+}
+
+/* Hover effect for login button */
+.navbar .auth-buttons a.login-button:hover {
+    background-color: #4d3d3d;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
+}
+
+/* Signup button styling */
+.navbar .auth-buttons a.signup-button {
+    background-color: #7a5c5c;
+    color: #ffffff;
+}
+
+/* Hover effect for signup button */
+.navbar .auth-buttons a.signup-button:hover {
+    background-color: #4d3d3d;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
+}

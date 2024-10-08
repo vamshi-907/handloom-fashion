@@ -1,0 +1,47 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .artisan-profiles-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .artisan-profiles-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #4d3d3d;
+  }
+  
+  /* Artisan Card */
+  .artisan-card {
+    background-color: #ffe6e6;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .artisan-card h3 {
+    font-size: 28px;
+    color: #4d3d3d;
+    margin-bottom: 15px;
+  }
+  
+  .artisan-card p {
+    font-size: 16px;
+    color: #5e4b4b;
+    margin-bottom: 20px;
+  }
+  
+  .artisan-image {
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
